@@ -1,3 +1,5 @@
+package src.app.feed;
+
 import java.util.ArrayList;
 
 public class Feed {

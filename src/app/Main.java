@@ -1,3 +1,8 @@
+package src.app;
+
+import src.app.feed.Feed;
+import src.app.feed.Post;
+import src.app.user.User;
 import java.util.HashMap;
 import java.util.Scanner;
 

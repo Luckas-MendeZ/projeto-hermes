@@ -1,3 +1,7 @@
+package src.app.feed;
+
+import src.app.user.User;
+
 public class Post {
     private User author;
     private String content;

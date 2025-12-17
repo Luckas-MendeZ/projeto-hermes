@@ -1,3 +1,5 @@
+package src.app.user;
+
 public class User {
     private String name;
 
