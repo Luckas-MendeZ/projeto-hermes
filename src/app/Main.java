@@ -11,7 +11,9 @@ public class Main{
 
         Scanner scanner = new Scanner(System.in);
 
+        // Stores previously created users by name to prevent duplication
         HashMap<String, User> users = new HashMap<>();
+        // feed principal da aplicaçao
         Feed feed = new Feed();
 
         while (true) {
@@ -21,6 +23,9 @@ public class Main{
             if (userName.equalsIgnoreCase("exit")) {
                 break;}
 
+                //A user is created only if they don't already exist
+                // ? retrieves an existing user
+                // : creates a new user
                 User user = users.containsKey(userName)
                     ?users.get(userName)
                     : new User(userName);
@@ -31,6 +36,7 @@ public class Main{
                 feed.addPost(new Post(user, content));
             }
 
+        // displays all posts in the feed
         feed.show();
         scanner.close();
     }
