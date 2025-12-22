@@ -1,8 +1,8 @@
-package src.app;
+package app;
 
-import src.app.feed.Feed;
-import src.app.feed.Post;
-import src.app.user.User;
+import app.feed.Feed;
+import app.feed.Post;
+import app.user.User;
 import java.util.HashMap;
 import java.util.Scanner;
 
@@ -13,7 +13,7 @@ public class Main{
 
         // Stores previously created users by name to prevent duplication
         HashMap<String, User> users = new HashMap<>();
-        // feed principal da aplicaçao
+        // Main feed
         Feed feed = new Feed();
 
         while (true) {
@@ -37,7 +37,7 @@ public class Main{
             }
 
         // displays all posts in the feed
-        feed.show();
+        feed.listPosts();
         scanner.close();
     }
 }

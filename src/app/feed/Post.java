@@ -1,10 +1,16 @@
-package src.app.feed;
+package app.feed;
 
-import src.app.user.User;
+import app.user.User;
 
 public class Post {
     private User author;
     private String content;
+    private int likes = 0;
+
+    // main system of likes
+    public void like(){
+        likes++;
+    }
 
         public Post(User author, String content){
             this.author = author;
@@ -15,5 +21,8 @@ public class Post {
         }
         public String getContent(){
             return content;
+        }
+        public int getLikes(){
+        return likes;
         }
 }
