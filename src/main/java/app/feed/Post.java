@@ -1,6 +1,6 @@
-package app.feed;
+package main.java.app.feed;
 
-import app.user.User;
+import main.java.app.user.User;
 
 public class Post {
     private User author;

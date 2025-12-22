@@ -1,8 +1,8 @@
-package app;
+package main.java.app;
 
-import app.feed.Feed;
-import app.feed.Post;
-import app.user.User;
+import main.java.app.feed.Feed;
+import main.java.app.feed.Post;
+import main.java.app.user.User;
 import java.util.HashMap;
 import java.util.Scanner;
 

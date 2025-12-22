@@ -1,7 +1,8 @@
-package app.feed;
+package main.java.app.feed;
 
 import java.util.ArrayList;
-import app.user.User;
+
+import main.java.app.user.User;
 
 public class Feed {
     private ArrayList<Post> posts = new ArrayList<>();
